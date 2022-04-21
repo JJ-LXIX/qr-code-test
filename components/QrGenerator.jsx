@@ -11,12 +11,12 @@ const QrGenerator = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col  p-5 justify-center items-center">
-        <h1 className="pb-2 w-full font-montserrat  text-center  text-[#F2E9E4] text-6xl">
+        <h1 className="pb-2 w-full font-montserrat  text-center font-bold  text-black text-6xl">
           URL to QR Code Generator
         </h1>
-        <div className="h-1 w-4/5 bg-[#F2E9E4] mb-6"></div>
+        <div className="h-1 w-4/5 bg-black mb-6"></div>
         <input
-          className="w-2/5 h-9 bg-[#4A4E69] placeholder-opacity-40  placeholder-[#F2E9E4] rounded-3xl p-5 overflow-hidden border border-white text-[#F2E9E4] "
+          className="w-2/5 h-9 bg-gradient-to-r from-[#08AEEA] to-[#2AF598] placeholder-opacity-40  placeholder-black rounded-3xl p-5 overflow-hidden border-4 ring-0 hover:scale-105 transition-all duration-200 ease-in-out focus:scale-105 shadow-lg border-black text-black "
           onChange={handleQRCodeChange}
           placeholder="Enter URL Here"
         />
@@ -24,7 +24,7 @@ const QrGenerator = () => {
         <QRCodeSVG
           value={text}
           size={350}
-          className="border-4 border-[#F2E9E4] p-2"
+          className="border-4 rounded-3xl border-black p-2"
         />
       </div>
     </div>
