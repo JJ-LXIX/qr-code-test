@@ -15,17 +15,24 @@ const QrGenerator = () => {
           URL to QR Code Generator
         </h1>
         <div className="h-1 w-4/5 bg-black mb-6"></div>
+
         <input
-          className="w-2/5 h-9 bg-gradient-to-r from-[#08AEEA] to-[#2AF598] placeholder-opacity-40  placeholder-black rounded-3xl p-5 overflow-hidden border-4 ring-0 hover:scale-105 transition-all duration-200 ease-in-out focus:scale-105 shadow-lg border-black text-black "
+          className="w-2/5 h-9 bg-gradient-to-r from-[#08AEEA] to-[#2AF598] placeholder-opacity-70  placeholder-slate-200 rounded-3xl 
+          p-5 overflow-hidden border-[.2rem] border-opacity-90 hover:scale-105 transition-all 
+          duration-200 ease-in-out focus:scale-105 shadow-lg border-black text-black text-md font-semibold cursor-pointer
+          text-left  "
           onChange={handleQRCodeChange}
           placeholder="Enter URL Here"
         />
+
         <br />
-        <QRCodeSVG
-          value={text}
-          size={350}
-          className="border-4 rounded-3xl border-black p-2"
-        />
+        <div className="glass w-[25rem] h-[25rem] flex justify-center items-center">
+          <QRCodeSVG
+            value={text}
+            size={350}
+            className="border-4 rounded-3xl border-black p-2"
+          />
+        </div>
       </div>
     </div>
   );

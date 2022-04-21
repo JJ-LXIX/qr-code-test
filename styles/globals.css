@@ -16,6 +16,17 @@ a {
   text-decoration: none;
 }
 
+.glass{
+    
+  background: rgba(255, 255, 255, 0.275);
+border-radius: 40px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+backdrop-filter: blur(.4px); 
+-webkit-backdrop-filter: blur(11.4px);
+border: 6px solid rgba(255, 255, 255, 0.1);
+}
+
 * {
   box-sizing: border-box;
 }
